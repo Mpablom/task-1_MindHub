@@ -5,39 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MDHL</title>
-    <link rel="shortcut icon" href="./img/Logo-Mighty-ducks-01.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/img/Logo-Mighty-ducks-01.png" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="./assets/style/style1.css"> -->
+    <!-- <link rel="stylesheet" href="./assets/style/style2.css"> -->
+    <link rel="stylesheet" href="./assets/style/style3.css">
 </head>
 <body>
     <header>
-        <figure>
-            <img src="./img/Logo-Mighty-ducks-01.png" alt="logo" width="80" align="left">
-        </figure>
         <h1>Mighty Ducks Hockey League</h1>
-        <nav>
-            <a href="./">Home</a> |
-            <a href="./html/about.html">About MDHL</a> |
-            <a href="./html/contact.html">Contact</a>
+        <nav id="navbar">
+            <div class="links1">
+                <a class="menu1" href="./">Home</a>
+            </div>
+            <div class="links2">
+                <a class="menu2" href="./html/about.html">About</a>
+            </div>
+            <div class="links2">
+                <a class="menu2" href="./html/contact.html">Contact</a>
+            </div>
         </nav>
     </header>
     <main>
+        <h2>Upcoming Events</h2>
         <figure>
-            <img src="./img/hockey-1.jpg" alt="img1" width="350" align="left">
+            <img class="img-logo" src="./assets/img/Logo-Mighty-ducks-01.png" alt="logo">
         </figure>
-        <section>
-            <h2>&emsp;Upcoming Events</h2>
-            <article>
-                <h3>&emsp;&emsp;August 4</h3>
-                <p>&emsp;&emsp;&emsp;MDSL Fundraiser</p>   
-            </article>
-            <article>
-                <h3>&emsp;&emsp;August 16</h3>
-                <p>&emsp;&emsp;&emsp;Season Kick-off: Meet the Teams</p>
-            </article>
-            <article>
-                <h3>&emsp;&emsp;September 1</h3>
-                <p>&emsp;&emsp;&emsp;First Game of the Season (Check Game Schedule for details)</p>
-            </article>
-        </section>
+        <article class="article-active">
+            <h3>August 4</h3>
+            <p>MDSL Fundraiser</p>   
+        </article>
+        <article>
+            <h3>August 16</h3>
+            <p>Season Kick-off: Meet the Teams</p>
+        </article>
+        <article>
+            <h3>September 1</h3>
+            <p>First Game of the Season (Check Game Schedule for details)</p>
+        </article>
     </main>
 </body>
 </html>
