@@ -12,6 +12,10 @@ body{
 a{
     text-decoration: none;
     width:fit-content ;
+    color: black;
+}
+.contact a{
+    color: blue;
 }
 h1{
     text-align: center;
@@ -50,9 +54,6 @@ h1{
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
 }
-.links1:active{
-    color: black;
-}
 h2{
     padding-top: 30px;
     padding-bottom: 30px;
@@ -64,15 +65,30 @@ article{
     border-radius: 40px;
     padding: 20px 10px 20px 10px;
     margin-bottom: 20px;
-    width: 50%;
+    width: 80%;
     display:flex;
-    margin-left: 25%;
+    float: right;
+    justify-content: center;
     background: rgb(234, 228, 228);
 }
-p{
+article h3 + p{
+    display:none;
+}
+article:target h3 + p {
     display: flex;
-    justify-content: center;
-    padding-left: 20px;
+}
+.contact{
+    display:inline-block;
+    margin-left: 30%;
+    flex-direction: column;
+    width: auto;
+    background: whitesmoke;
+    box-shadow: 2px 2px 3px 1px black;
+    border-radius: 50px;
+    padding: 10px;
+}
+.contact p{
+    padding-bottom: 10px;
 }
 
 
@@ -87,4 +103,54 @@ p{
 	100% {
 		transform: translatey(0px);
 	}
+}
+
+
+/* *********************************** MEDIA QUERY ************************ */
+@media only screen and (max-width: 768px){
+    #navbar{
+        flex-direction: column;
+        justify-content: center;
+        margin: 0px;
+        height:max-content;
+        box-shadow: 0px 5px 30px 1px black;
+    }
+    .links1 a , .links2 a{
+        justify-content: center;
+        margin: 0;
+        transition: none;
+        width: 100%;
+    }
+    .links1, .links2{
+        width:100%;
+        border-radius: 5px;
+        border: 2px solid white;
+        margin: 3px;
+    }
+    .img-logo{
+        width: 50%;
+        display: inline-block;
+        margin-left: 25%;
+        top:1;
+    }
+    article{
+        box-shadow: 0px 1px 15px 1px black;
+        padding: 20px 10px 20px 10px;
+        width: 90%;
+        float: none;
+        display:flex;
+        margin-left: 5%;
+        background: rgb(234, 228, 228);
+    }
+    p{
+        overflow-wrap: break-word;
+        margin-top: 20px;
+    }
+    h3{
+        max-height: 20px;
+        position:absolute;
+        display: flex;
+        margin-left: 50%;
+        margin-top: -20px;
+    }
 }
