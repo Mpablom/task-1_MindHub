@@ -1,98 +1,119 @@
+/* ======================== GLOBALES ======================== */
+
 *,html{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+}
+html{
     min-height: 100%;
 }
 body{
     min-height: 100%;
-    background: linear-gradient(to bottom,rgb(1, 182, 254),rgb(61, 194, 246), rgb(89, 202, 246), rgb(113, 208, 246), rgb(176, 218, 234), rgb(182, 234, 255), white);
+    background: linear-gradient(to right, #757f9a, #d7dde8);
+    padding-bottom: 60px;   /* agregado para que se vea un poco mas abajo */
 }
-a{
-    text-decoration: none;
-    width:fit-content ;
-    color: black;
-}
-.contact a{
-    color: blue;
+
+/* ======================== HEADER ======================== */
+
+header{
+    display: inline;
 }
 h1{
     text-align: center;
     text-shadow: 0px 5px 12px rgba(0, 0, 0, 0.74);
     height: 80px;
-    margin-top: 20px;
-}
-.img-logo{
-    width: 150px;
-    display: inline-flex;
-    float: left;
-    animation: float 5s linear infinite;
+    padding-top: 10px;
 }
 #navbar{
     display: flex;
-    justify-content:flex-end;
-    align-items:center;
+    position: sticky;
+    left: 0;
+    top: 0;
+    right: 0;
+    justify-content:center;
     margin: auto;
     background:linear-gradient(to bottom, rgb(60, 59, 59),rgb(0, 0, 0), rgb(60, 59, 59));
-    width: 100%;
     border: 1px solid black;
     border-radius: 5px;
     height: 50px;
+    z-index: 1;
 }
-.links1 a, .links2 a{
-    display: flex;
-    transition: all .4s ease-out;
-    color:whitesmoke;
-    font-weight: 900;
+.links1, .links2{
+    border-radius: 20px;
+    font-weight: 400;
     font-style: italic;
     font-size: 20px;
-    padding: 20px;
-    margin-left: 60px;
+    
+    position: relative;
+    top: 10px;
+    transition: all .4s ease-in-out;
+    height: min-content;
+    
 }
-.links1 a:hover, .links2 a:hover{
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+.links1:hover, .links2:hover {
+    transform: scale(1.1);
+    background: #757f9a;
 }
+.menu1, .menu2{
+    text-decoration: none;
+    color: whitesmoke;
+    margin: 0px 50px;
+}
+
+/* ======================== MAIN ======================== */
 h2{
     padding-top: 30px;
     padding-bottom: 30px;
     display: flex;
     justify-content: center;
 }
+.img-logo{
+    width: 10%;
+    display: inline-flex;
+    float: left;
+    animation: float 5s linear infinite;
+}
 article{
-    box-shadow: 2px 2px 3px 1px black;
+    box-shadow: 0px 1px 10px -4px black;
     border-radius: 40px;
     padding: 20px 10px 20px 10px;
     margin-bottom: 20px;
-    width: 80%;
-    display:flex;
-    float: right;
-    justify-content: center;
+    width: 70%;
+    margin-left: 15%;
     background: rgb(234, 228, 228);
+    position: relative;
 }
-article h3 + p{
-    display:none;
+article h3{
+    width: 100%;
+    text-align: center;
+    height: 60px;
 }
-article:target h3 + p {
-    display: flex;
+article p{
+    text-align: center;
+    line-height: 30px;
 }
 .contact{
     display:inline-block;
-    margin-left: 30%;
-    flex-direction: column;
-    width: auto;
+    position: block;
+    text-align: center;
+    width:30%;
+    margin-left: 25%;
     background: whitesmoke;
-    box-shadow: 2px 2px 3px 1px black;
-    border-radius: 50px;
-    padding: 10px;
+    box-shadow: 0px 1px 10px -4px black;
+    border-radius: 40px;
+    padding: 10px 20px;
 }
 .contact p{
     padding-bottom: 10px;
 }
-
+.contact a{
+    color: blue;
+}
 
 /* ***************************** KEYFRAME******************************* */
+
 @keyframes float {
 	0% {
 		transform: translatey(0px);
@@ -107,50 +128,54 @@ article:target h3 + p {
 
 
 /* *********************************** MEDIA QUERY ************************ */
+
 @media only screen and (max-width: 768px){
+
+    /* ======================== HEADER ======================== */
+
+    h1{
+        margin-bottom: 10%;
+    }
     #navbar{
-        flex-direction: column;
-        justify-content: center;
-        margin: 0px;
-        height:max-content;
+        height:min-content;
         box-shadow: 0px 5px 30px 1px black;
-    }
-    .links1 a , .links2 a{
-        justify-content: center;
-        margin: 0;
-        transition: none;
         width: 100%;
+        display: block;
     }
-    .links1, .links2{
-        width:100%;
+    .links1 , .links2{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        margin-top: 10px;
+        width: 100%;
         border-radius: 5px;
-        border: 2px solid white;
-        margin: 3px;
+        border: 1px solid white;
+        padding: 10px 0px 10px 0px;
+        transition: none;
+        position: static;
     }
+    .links1{
+        margin-top: 0;
+    }
+    .menu1, .menu2{
+        width: 100%;
+        text-align: center;
+    }
+
+    /* ======================== MAIN ======================== */
+
     .img-logo{
-        width: 50%;
-        display: inline-block;
-        margin-left: 25%;
-        top:1;
+        width: 40%;
+        align-content: center;
+        float: none;
+        margin-left: 30%;
+        position: static;
     }
     article{
-        box-shadow: 0px 1px 15px 1px black;
-        padding: 20px 10px 20px 10px;
-        width: 90%;
-        float: none;
-        display:flex;
-        margin-left: 5%;
-        background: rgb(234, 228, 228);
+        margin-top: 10px;
     }
-    p{
-        overflow-wrap: break-word;
-        margin-top: 20px;
-    }
-    h3{
-        max-height: 20px;
-        position:absolute;
-        display: flex;
-        margin-left: 50%;
-        margin-top: -20px;
+    .contact{
+        width:70%;
+        margin-left: 15%;
     }
 }

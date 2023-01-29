@@ -1,44 +1,46 @@
+/* ======================== GLOBALES ======================== */
+
 *,html{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-body{
-    height: 100%;
-    width: 80%;
-    margin-left: 10%;
+html, body{
+    min-height: 100%;
 }
-a{
-    text-decoration: none;
-    width:fit-content ;
-}
-h1{
-    margin-left: 20px;
-}
+
+/* ======================== HEADER ======================== */
+
 header{
     background-image: url("../img/hockey-1.jpg");
     height: 350px;
     background-position: center;
     background-size: cover;
 }
+h1{
+    margin-left: 20px;
+}
 #navbar{
     display: flex;
     flex-direction: column;
-    margin-top: 39%;
+    margin-top: 30%;
 }
 .links1, .links2{
     margin-bottom: 50px;
     margin-left: 30px;
     margin-bottom: 5%;
 }
-article{
-    display: flex;
-    flex-direction: column;
-    margin-left: 16%;
-    margin-top: 30px;
+.menu1, .menu2{
+    text-decoration: none;
+    width:fit-content ;
+    color: #000000;
+    font-weight: 500;
 }
-h2{
+
+/* ======================== MAIN ======================== */
+
+main h2{
     width: 100%;
     background-color: black;
     height: 60px;
@@ -47,16 +49,21 @@ h2{
     text-align:center;
     padding-top: 10px;
 }
-
-p{
-    width: 77%;
-    text-indent: 20px;
-}
 .img-logo{
-    width: 60px;
+    width: 70px;
     float:right;
     margin-right: 20%;
-    margin-top: -6%;
+    margin-top: -5%;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    margin-left: 16%;
+    margin-top: 30px;
+}
+article p{
+    width: 77%;
+    text-indent: 20px;
 }
 .contact{
     display: flex;
@@ -66,4 +73,20 @@ p{
 }
 .contact p{
     margin-bottom: 20px;
+}
+.contact a{
+    color: blue;
+}
+
+
+/* ***************************** MEDIA QUERY ********************************* */
+@media only screen and (max-width: 768px){
+    h1{
+        margin-left: 0;
+    }
+    #navbar{
+        align-content: flex-end;
+        position: absolute;
+        top: 450px;
+    }
 }
