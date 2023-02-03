@@ -52,11 +52,13 @@ body{
 }
 .links:hover {
     transform: scale(0.9);
-    background:rgb(200, 153, 11);
+    background:transparent;
+    box-shadow: inset -1px -1px 10px -5px black;
     cursor: pointer;
 }
 .links-activo{
-    background: rgb(200, 153, 11);
+    background: transparent;
+    box-shadow: inset -1px -1px 10px -5px black;
     border-radius: 20px;
     font-weight: 400;
     font-style: italic;
@@ -65,7 +67,7 @@ body{
     transition: all .4s ease-in-out;
     height: min-content;
 }
-.menu , .menu-activo{
+.menu{
     text-decoration: none;
     color: black;
     margin: 0px 50px;
@@ -108,7 +110,7 @@ main{
 }
 .article:hover{
     transform: scale(1.1);
-    background-color: rgb(146, 141, 141);
+    background-color: rgb(245, 227, 198);
     color: black;
     border-radius: 40px;
 }
@@ -131,7 +133,7 @@ main{
     transition: all .8s ease-in-out;
 }
 .contact:hover{
-    background: whitesmoke;
+    background: rgb(245, 227, 198);
     transform: scale(1.09);
     color: rgb(0, 0, 0);
 }
@@ -262,7 +264,7 @@ tr:nth-child(even):hover{
     position: absolute;
     bottom: 0;
     width: 100%;
-    background:linear-gradient(to bottom, rgb(60, 59, 59),rgb(0, 0, 0), rgb(60, 59, 59));
+    background:linear-gradient(to bottom, rgb(35, 34, 34),rgb(0, 0, 0), rgb(35, 34, 34));
     color: #d7dde8;
     height: 60px;
     display: flex;
@@ -307,16 +309,17 @@ tr:nth-child(even):hover{
         width: 100%;
         display: block; */
     } 
-    .links{
+    .links, .links-activo{
         display: flex;
         justify-content: center;
         width: 30%;
-        border-radius: 5px;
-        padding: 10px 0px 10px 0px;
+        border-radius: 20px;
+        padding: 0;
         transition: none;
+        margin:10px 0px;
     }
     .menu{
-        margin: 10px;
+        margin: 5px;
     }
 
     /* ======================== MAIN ======================== */
@@ -364,6 +367,14 @@ tr:nth-child(even):hover{
     }
 }
 @media(max-width: 320px){ 
+    .links, .links-activo{
+        transition: none;
+        padding:0px 46px;
+    }
+    .menu{
+        padding: 0px 5px;
+        margin: 5px;
+    }
     main{
         font-size: 11px;
     }
