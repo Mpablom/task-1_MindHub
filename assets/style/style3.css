@@ -171,15 +171,6 @@ main{
     padding: 5px;
     text-align: center;
 }
-.location:hover>.iframe{
-    display: block;
-    position: absolute;
-    outline: 1px solid black;
-    border-radius: 10%;
-    box-shadow: 0px 0px 10px 5px black;
-    left: 40%;
-    transform: scale(1.05);
-}
 tr:nth-child(even){
     background-color: rgb(203, 152, 0);
 }
@@ -229,6 +220,16 @@ tr:nth-child(even):hover{
     max-width: min-content;
     padding-left: 47%;
 }
+.location:hover>.iframe{
+    display: block;
+    position: absolute;
+    outline: 1px solid black;
+    border-radius: 10%;
+    box-shadow: 0px 0px 10px 5px black;
+    left: 40%;
+    transform: scale(1.05);
+}
+
 /* ******************************************** LIST ******************************************* */
 
 .title-page, .sportsmanship, .list, .all-play{
@@ -360,9 +361,11 @@ tr:nth-child(even):hover{
     padding: 20px 0px;
     display: flex;
     justify-content: space-around;
+    align-items: flex-end;
 }
 #signature{
     width: 30%;
+    text-align: center;
 }
 .date{
     background: transparent;
@@ -504,6 +507,48 @@ tr:nth-child(even):hover{
         width: 40%;
         flex-wrap: wrap;
     }
+    .location:hover>.iframe{
+        left: 15%;
+        width: 70%;
+    }
+    .img-logo-2{
+        width: 40%;
+        align-content: center;
+        float: none;
+        margin-left: 30%;
+        position: static;
+    }
+    .form-container{
+        width: 100%;
+        margin: 0;
+    }
+    .form1{
+        border-radius: 0;
+    }
+    .input-group{
+        display: block;
+    }
+    .input-text, .input-text-grade{
+        margin-right: 0;
+        display: inline-block;
+        padding: 10px;
+    }
+    .gender-text{
+        margin-left: -10px;
+    }
+    .date{
+        display: inline;
+        margin-bottom: 20px;
+    }
+    .input-signature{
+        flex-wrap: wrap;
+        padding-bottom: 10px;
+    }
+    #signature{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 20px;
+    }
 }
 @media(max-width: 320px){ 
     .links, .links-activo{
@@ -516,5 +561,8 @@ tr:nth-child(even):hover{
     }
     main{
         font-size: 11px;
+    }
+    .btn{
+        width: 70%;
     }
 }
