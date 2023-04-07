@@ -4,40 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MDHL</title>
-    <link rel="shortcut icon" href="./img/Logo-Mighty-ducks-01.png" type="image/x-icon">
+    <title>MDHL | inicio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/img/Logo-Mighty-ducks-01.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/style/style3.css">
 </head>
 <body>
-    <header>
-        <figure>
-            <img src="./img/Logo-Mighty-ducks-01.png" alt="logo" width="80" align="left">
-        </figure>
-        <h1>Mighty Ducks Hockey League</h1>
-        <nav>
-            <a href="./">Home</a> |
-            <a href="./about.html">About MDHL</a> |
-            <a href="./contact.html">Contact</a>
+    <header id="header">
+        <h1 id="title">Mighty Ducks Hockey League</h1>
+        <nav id="navbar">
+            <div class="links-activo">
+                <a class="menu" href="./">Home</a>
+            </div>
+            <div class="links">
+                <a class="menu" href="./about.html">About</a>
+            </div>
+            <div class="links">
+                <a class="menu" href="./contact.html">Contact</a>
+            </div>
+            <div class="links">
+                <a class="menu" href="./game_info.html">Schedule</a>
+            </div>
+            <div class="links">
+                <a class="menu" href="./rules.html">Rules</a>
+            </div>
+            <div class="links">
+                <a class="menu" href="./registration.html">Register</a>
+            </div>
         </nav>
     </header>
     <main>
-        <figure>
-            <img src="./img/hockey-1.jpg" alt="img1" width="350" align="left">
-        </figure>
-        <section>
-            <h2>&emsp;Upcoming Events</h2>
-            <article>
-                <h3>&emsp;&emsp;August 4</h3>
-                <p>&emsp;&emsp;&emsp;MDSL Fundraiser</p>   
-            </article>
-            <article>
-                <h3>&emsp;&emsp;August 16</h3>
-                <p>&emsp;&emsp;&emsp;Season Kick-off: Meet the Teams</p>
-            </article>
-            <article>
-                <h3>&emsp;&emsp;September 1</h3>
-                <p>&emsp;&emsp;&emsp;First Game of the Season (Check Game Schedule for details)</p>
-            </article>
-        </section>
+        <div class="encabezado">
+            <h2 class="subtitle">Upcoming Events</h2>
+            <figure>
+                <img class="img-logo" src="./assets/img/Logo-Mighty-ducks-01.png" alt="logo">
+            </figure>
+        </div>
+        <div class="carrusel">
+            <ul class="carrusel-img">
+                <li id="foto-1"><img src="./assets/img/hockey-1.jpg" alt="img1"></li>
+                <li id="foto-2"><img src="./assets/img/hockey-2.jpg" alt="img2"></li>
+                <li id="foto-3"><img src="./assets/img/hockey-3.jpg" alt="img3"></li>
+            </ul>
+            <ul class="carrusel-menu">
+                <li><a href="#foto-1"><img src="./assets/img/hockey-1.jpg" alt="img1"></a></li>
+                <li><a href="#foto-2"><img src="./assets/img/hockey-2.jpg" alt="img2"></a></li>
+                <li><a href="#foto-3"><img src="./assets/img/hockey-3.jpg" alt="img3"></a></li>
+            </ul>
+        </div>
+        <article class="article">
+            <h3 class="article-title">August 4</h3>
+            <p class="article-text">MDSL Fundraiser</p>   
+        </article>
+        <article class="article">
+            <h3 class="article-title">August 16</h3>
+            <p class="article-text">Season Kick-off: Meet the Teams</p>
+        </article>
+        <article class="article">
+            <h3 class="article-title">September 1</h3>
+            <p class="article-text">First Game of the Season (Check Game Schedule for details)</p>
+        </article>
     </main>
+    <footer>
+        <div class="footer">
+            <div class="dev-name">
+                <p>&COPY; Pablo Moya 2023</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,114 @@
+/* ======================== GLOBALES ======================== */
+
+*,html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    min-height: 100%;
+}
+body{
+    min-height: 100%;
+    padding-top: 50px;
+}
+
+/* ======================== HEADER ======================== */
+
+header{
+    background-image: url("../img/hockey-1.jpg");
+    height: 350px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    display: flex;
+    position: absolute;
+    vertical-align: top;
+    top: 0;
+    margin-left: 20px;
+}
+#navbar{
+    display: flex;
+    justify-content: end;
+    margin-top: -1%; 
+    vertical-align: top;
+    position: absolute;
+    right: 30px;
+}
+.links1{
+    background: rgb(108, 164, 51);
+    border:1px solid black;
+    padding: 0px 10px 0px 10px;
+    box-shadow: 2px 2px 1px 1px gray;
+}
+#navbar a{
+    color: white;
+}
+.links2{
+    margin-left: 10px;
+    border:1px solid black;
+    background: rgba(59, 94, 182, 0.952);
+    padding: 0px 10px 0px 10px;
+    box-shadow: 2px 2px 1px 1px gray;
+}
+.menu1, .menu2{
+    text-decoration: none;
+    width:fit-content ;
+}
+
+/* ======================== MAIN ======================== */
+
+.subtitle{
+    width: 100%;
+    background-color: white;
+    height: 60px;
+    color: black;
+    border: 2px solid black;
+    text-align:center;
+    padding-top: 10px;
+}
+.img-logo{
+    display:flex;
+    width: 100px;
+    margin-top: 5%;
+}
+article{
+    margin-left: 16%;
+    padding-bottom: 20px;
+}
+.article-active{
+    margin-top: -10%;
+}
+article p{
+    width: 77%;
+    text-indent: 20px;
+}
+.contact{
+    float: left;
+    width: 80%;
+    margin-left:12%;
+    margin-top: -8%;
+}
+.contact p{
+    margin-bottom: 20px;
+}
+
+/* ***************************** MEDIA QUERY ********************************* */
+
+@media only screen and (max-width: 768px){
+
+    /* ======================== HEADER ======================== */
+
+    h1{
+        margin: 0;
+    }
+    #navbar{
+        align-content: flex-end;
+        position: absolute;
+        top: 450px;
+    }
+}

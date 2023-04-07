@@ -1,0 +1,92 @@
+/* ======================== GLOBALES ======================== */
+
+*,html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+html, body{
+    min-height: 100%;
+}
+
+/* ======================== HEADER ======================== */
+
+header{
+    background-image: url("../img/hockey-1.jpg");
+    height: 350px;
+    background-position: center;
+    background-size: cover;
+}
+h1{
+    margin-left: 20px;
+}
+#navbar{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30%;
+}
+.links1, .links2{
+    margin-bottom: 50px;
+    margin-left: 30px;
+    margin-bottom: 5%;
+}
+.menu1, .menu2{
+    text-decoration: none;
+    width:fit-content ;
+    color: #000000;
+    font-weight: 500;
+}
+
+/* ======================== MAIN ======================== */
+
+main h2{
+    width: 100%;
+    background-color: black;
+    height: 60px;
+    color: white;
+    margin-top: 10px;
+    text-align:center;
+    padding-top: 10px;
+}
+.img-logo{
+    width: 70px;
+    float:right;
+    margin-right: 20%;
+    margin-top: -5%;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    margin-left: 16%;
+    margin-top: 30px;
+}
+article p{
+    width: 77%;
+    text-indent: 20px;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    margin-top: 30px;
+}
+.contact p{
+    margin-bottom: 20px;
+}
+.contact a{
+    color: blue;
+}
+
+
+/* ***************************** MEDIA QUERY ********************************* */
+@media only screen and (max-width: 768px){
+    h1{
+        margin-left: 0;
+    }
+    #navbar{
+        align-content: flex-end;
+        position: absolute;
+        top: 450px;
+    }
+}
