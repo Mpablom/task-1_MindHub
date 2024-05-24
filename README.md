@@ -1,2 +1,5 @@
-# task-1_MindHub
-![image](https://user-images.githubusercontent.com/100524470/213828981-e25dbec9-21df-4887-ba99-f6797fe0dc48.png)
+# Mighty Ducks Hockey League
+![image](assets/img/Screenshot_2023-05-06_20-54-50.png)
+
+***Proyecto Realizado en css y Javascript puro para el Bootcamp Front-End de Mindhub.***
+
